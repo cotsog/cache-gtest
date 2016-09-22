@@ -1,0 +1,13 @@
+language: cpp
+sudo: false
+
+cache:
+  directories:
+    - $HOME/gtest
+
+before_install:
+  - chmod +x ./install-gtest.sh
+  - ./install-gtest.sh
+
+install: true
+script: true
